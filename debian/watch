@@ -1,0 +1,3 @@
+version=3
+opts=filenamemangle=s/.+\/v?(\d\S*)\.tar\.gz/puppetlabs-concat-$1\.tar\.gz/ \
+  https://github.com/puppetlabs/puppetlabs-concat/tags .*/v?(\d\S*)\.tar\.gz

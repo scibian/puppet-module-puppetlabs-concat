@@ -1,0 +1,70 @@
+puppet-module-puppetlabs-concat (2.2.0-1) unstable; urgency=medium
+
+  * Imported upstream release 2.2.0
+
+ -- Stig Sandbeck Mathisen <ssm@debian.org>  Sat, 19 Nov 2016 09:35:12 +0100
+
+puppet-module-puppetlabs-concat (2.1.0-2) unstable; urgency=medium
+
+  * Declare compliance with Debian policy 3.9.8
+  * Add myself to Uploaders list
+  * Update dependencies for puppet 4
+
+ -- Stig Sandbeck Mathisen <ssm@debian.org>  Tue, 24 May 2016 09:44:44 +0200
+
+puppet-module-puppetlabs-concat (2.1.0-1) unstable; urgency=medium
+
+  * Team upload.
+  * Imported upstream release 2.1.0
+  * Declare compliance with Debian Policy 3.9.7
+  * Update VCS URI
+  * Update upstream URI
+
+ -- Stig Sandbeck Mathisen <ssm@debian.org>  Tue, 12 Apr 2016 12:54:18 +0200
+
+puppet-module-puppetlabs-concat (2.0.1-1) unstable; urgency=medium
+
+  * Team upload.
+
+  [ Michael Weiser ]
+  * Imported upstream release 2.0.1
+
+  [ Stig Sandbeck Mathisen ]
+  * [9e791a5] debian/watch: Look to github for versions
+  * [7d977c7] Add DEP-8 tests
+
+ -- Stig Sandbeck Mathisen <ssm@debian.org>  Sat, 12 Sep 2015 00:15:33 +0200
+
+puppet-module-puppetlabs-concat (1.1.2-1) unstable; urgency=medium
+
+  * Imported upstream release 1.1.2
+  * Fix concatfragments.rb script permissions and add ruby as explicit
+    dependency for it.
+
+ -- Michael Weiser <michael.weiser@gmx.de>  Fri, 21 Nov 2014 12:24:16 +0100
+
+puppet-module-puppetlabs-concat (1.1.1-1) unstable; urgency=medium
+
+  * Imported upstream relase 1.1.1
+  * Declare compliance with Debian policy 3.9.6
+  * Update debian/control metadata with cme (Vcs-*)
+  * Update dependencies
+  * Update file lists
+
+ -- Stig Sandbeck Mathisen <ssm@debian.org>  Fri, 24 Oct 2014 22:11:25 +0200
+
+puppet-module-puppetlabs-concat (1.0.0-2) unstable; urgency=medium
+
+  * debian/watch: use redirector from qa.debian.org.
+  * debian/control:
+    - use Debian address in Uploaders field.
+    - Bump Standards-Version to 3.9.5. No further changes.
+
+ -- Thomas Bechtold <toabctl@debian.org>  Wed, 22 Jan 2014 07:49:29 +0100
+
+puppet-module-puppetlabs-concat (1.0.0-1) unstable; urgency=low
+
+  [ Thomas Bechtold ]
+  * Initial release (Closes: #720291)
+
+ -- Stig Sandbeck Mathisen <ssm@debian.org>  Sun, 08 Sep 2013 19:44:10 +0200
