@@ -1,3 +1,9 @@
+puppet-module-puppetlabs-concat (2.2.0-1sci8u1) scibian8; urgency=medium
+
+  * New upstream release for Scibian 8
+
+ -- Benoit Boccard <benoit-externe.boccard@edf.fr>  Wed, 13 Feb 2019 13:26:00 +0100
+
 puppet-module-puppetlabs-concat (2.2.0-1) unstable; urgency=medium
 
   * Imported upstream release 2.2.0
