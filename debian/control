@@ -1,21 +1,19 @@
 Source: puppet-module-puppetlabs-concat
-Maintainer: Puppet Package Maintainers <pkg-puppet-devel@lists.alioth.debian.org>
-Uploaders: Stig Sandbeck Mathisen <ssm@debian.org>,
-           Thomas Bechtold <toabctl@debian.org>
+Maintainer: Scibian Project <packaging@scibian.org> 
 Section: admin
 Testsuite: autopkgtest
 Priority: optional
-Build-Depends: debhelper (>= 10)
+Build-Depends: debhelper (>= 9)
 Standards-Version: 3.9.8
-Vcs-Browser: https://anonscm.debian.org/cgit/pkg-puppet/puppet-module-puppetlabs-concat.git
-Vcs-Git: https://anonscm.debian.org/git/pkg-puppet/puppet-module-puppetlabs-concat.git
+Vcs-Browser: https://github.com/scibian/puppet-module-puppetlabs-concat
+Vcs-Git: https://github.com/scibian/puppet-module-puppetlabs-concat.git
 Homepage: https://forge.puppet.com/puppetlabs/concat
 
 Package: puppet-module-puppetlabs-concat
 Architecture: all
 Depends: ${misc:Depends},
          puppet-module-puppetlabs-stdlib,
-         puppet (>= 4) | puppet-common (>= 3),
+         puppet4 | puppet-common (>= 3),
          ruby
 Description: Puppet module for concat
  Puppet lets you centrally manage every important aspect of your system

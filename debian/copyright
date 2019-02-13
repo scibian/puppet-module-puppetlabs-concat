@@ -4,6 +4,7 @@ Source: https://forge.puppetlabs.com/puppetlabs/concat
 
 Files: debian/*
 Copyright: 2013 Thomas Bechtold <thomasbechtold@jpberlin.de>
+           2019 Scibian Project <legal@scibian.org>
 License: Apache-2.0
 
 Files: *
