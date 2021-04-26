@@ -1,0 +1,26 @@
+Source: puppet-module-puppetlabs-concat
+Maintainer: Scibian Project <packaging@scibian.org> 
+Section: admin
+Testsuite: autopkgtest
+Priority: optional
+Build-Depends: debhelper (>= 9)
+Standards-Version: 3.9.8
+Vcs-Browser: https://github.com/scibian/puppet-module-puppetlabs-concat
+Vcs-Git: https://github.com/scibian/puppet-module-puppetlabs-concat.git
+Homepage: https://forge.puppet.com/puppetlabs/concat
+
+Package: puppet-module-puppetlabs-concat
+Architecture: all
+Depends: ${misc:Depends},
+         puppet-module-puppetlabs-stdlib,
+         puppet5 | puppet5-common,
+         ruby
+Description: Puppet module for concat
+ Puppet lets you centrally manage every important aspect of your system
+ using a cross-platform specification language that manages all the
+ separate elements normally aggregated in different files, like users,
+ cron jobs, and hosts, along with obviously discrete elements like
+ packages, services, and files.
+ .
+ This package contains a Puppet module that can construct files from
+ fragments.
