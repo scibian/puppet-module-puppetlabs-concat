@@ -1,37 +1,39 @@
+# frozen_string_literal: true
+
 require 'spec_helper_acceptance'
 
-describe 'with file recursive purge' do
-  basedir = default.tmpdir('concat')
-  context 'should still create concat file' do
-    pp = <<-EOS
-      file { '#{basedir}/bar':
-        ensure => directory,
-        purge  => true,
-        recurse => true,
-      }
+describe 'concurrency, with file recursive purge' do
+  attr_reader :basedir
 
-      concat { "foobar":
-        ensure => 'present',
-        path   => '#{basedir}/bar/foobar',
-      }
+  before(:all) do
+    @basedir = setup_test_directory
+  end
 
-      concat::fragment { 'foo':
-        target => 'foobar',
-        content => 'foo',
-      }
-    EOS
+  describe 'when run should still create concat file' do
+    let(:pp) do
+      <<-MANIFEST
+        file { '#{basedir}/bar':
+          ensure => directory,
+          purge  => true,
+          recurse => true,
+        }
 
-    it 'applies the manifest twice with no stderr' do
-      apply_manifest(pp, :catch_failures => true)
-      apply_manifest(pp, :catch_changes => true)
+        concat { "foobar":
+          ensure => 'present',
+          path   => '#{basedir}/bar/foobar',
+        }
+
+        concat::fragment { 'foo':
+          target => 'foobar',
+          content => 'foo',
+        }
+      MANIFEST
     end
 
-    describe file("#{basedir}/bar/foobar") do
-      it { should be_file }
-      its(:content) {
-        should match 'foo'
-      }
+    it 'applies the manifest twice with no stderr' do
+      idempotent_apply(pp)
+      expect(file("#{basedir}/bar/foobar")).to be_file
+      expect(file("#{basedir}/bar/foobar").content).to match 'foo'
     end
   end
 end
-
