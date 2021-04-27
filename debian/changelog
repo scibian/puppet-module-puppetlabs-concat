@@ -1,3 +1,9 @@
+puppet-module-puppetlabs-concat (7.0.1-1sci9u2) scibian9; urgency=medium
+
+  * desactivate autopkgtest to fix build issue
+
+ -- Kwame AMEDODJI <kwame-externe.amedodji@edf.fr>  Tue, 27 Apr 2021 13:54:34 +0200
+
 puppet-module-puppetlabs-concat (7.0.1-1sci9u1) scibian9; urgency=medium
 
   [ Kwame Amedodji ]
