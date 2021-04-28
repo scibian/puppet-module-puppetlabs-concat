@@ -1,5 +1,3 @@
-# frozen_string_literal: true
-
 if ENV['COVERAGE'] == 'yes'
   require 'simplecov'
   require 'simplecov-console'

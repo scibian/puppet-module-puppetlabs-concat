@@ -25,13 +25,17 @@ define concat::fragment (
   $resource = 'Concat::Fragment'
 
   if ($order =~ String and $order =~ /[:\n\/]/) {
-    fail("${resource}['${title}']: 'order' cannot contain '/', ':', or '\\n'.")
+    # lint:ignore:140chars
+    fail(translate("%{_resource}['%{_title}']: 'order' cannot contain '/', ':', or '\\n'.", { '_resource' => $resource, '_title' => $title }))
+    # lint:endignore
   }
 
   if ! ($content or $source) {
     crit('No content, source or symlink specified')
   } elsif ($content and $source) {
-    fail("${resource}['${title}']: Can't use 'source' and 'content' at the same time.")
+    # lint:ignore:140chars
+    fail(translate("%{_resource}['%{_title}']: Can't use 'source' and 'content' at the same time.", { '_resource' => $resource, '_title' => $title }))
+    # lint:endignore
   }
 
   # $serverversion is empty on 'puppet apply' runs. Just use clientversion.
