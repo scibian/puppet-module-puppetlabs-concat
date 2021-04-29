@@ -1,3 +1,4 @@
 metadata.json usr/share/puppet/modules.available/puppetlabs-concat
 manifests usr/share/puppet/modules.available/puppetlabs-concat
 lib usr/share/puppet/modules.available/puppetlabs-concat
+types usr/share/puppet/modules.available/puppetlabs-concat
