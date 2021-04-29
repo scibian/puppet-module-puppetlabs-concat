@@ -1,3 +1,10 @@
+puppet-module-puppetlabs-concat (7.0.1-1sci9u6) scibian9; urgency=medium
+
+  * ignore .pc right now
+  * fix issue with match alias introduce in ruby 2.4+
+
+ -- Kwame AMEDODJI <kwame-externe.amedodji@edf.fr>  Thu, 29 Apr 2021 15:32:53 +0200
+
 puppet-module-puppetlabs-concat (7.0.1-1sci9u5) scibian9; urgency=medium
 
   * delete unused types entry in install files
