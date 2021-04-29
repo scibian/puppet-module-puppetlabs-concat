@@ -1,3 +1,9 @@
+puppet-module-puppetlabs-concat (7.0.1-1sci9u5) scibian9; urgency=medium
+
+  * delete unused types entry in install files
+
+ -- Kwame AMEDODJI <kwame-externe.amedodji@edf.fr>  Thu, 29 Apr 2021 14:28:39 +0200
+
 puppet-module-puppetlabs-concat (7.0.1-1sci9u4) scibian9; urgency=medium
 
   * ignore debian/files right now
