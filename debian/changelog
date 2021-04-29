@@ -1,3 +1,10 @@
+puppet-module-puppetlabs-concat (7.0.1-1sci9u4) scibian9; urgency=medium
+
+  * ignore debian/files right now
+  * add missing types in install files
+
+ -- Kwame AMEDODJI <kwame-externe.amedodji@edf.fr>  Thu, 29 Apr 2021 14:02:53 +0200
+
 puppet-module-puppetlabs-concat (7.0.1-1sci9u3) scibian9; urgency=medium
 
   * try to fix autotest issue suppress full debian/tests
